@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Main from './components/Main';
-import Camera from './components/Camera';
+import CameraScreen from './components/CameraScreen';
 import Gallery from './components/Gallery';
 import Photo from './components/Photo';
 
@@ -15,7 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Main" component={Main} />
         <Stack.Screen name="Gallery" component={Gallery} />
-        <Stack.Screen name="Camera" component={Camera} />
+        <Stack.Screen name="Camera" component={CameraScreen} />
         <Stack.Screen name="Photo" component={Photo} />
       </Stack.Navigator>
     </NavigationContainer>
