@@ -39,6 +39,7 @@ export default class Gallery extends Component {
         await MediaLibrary.deleteAssetsAsync(this.state.selected);
         await this.refreshPhotos()
         const message = this.state.selected[0] ? 'Removed selected photos.' : 'No photos selected'
+        this.setState({ selected: [] })
         ToastAndroid.showWithGravity(
             message,
             ToastAndroid.SHORT,
